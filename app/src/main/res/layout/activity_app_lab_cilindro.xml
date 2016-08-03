@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!-- Objeto con Scroll -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:background="@color/md_grey_50">
+
+            <!-- Card Perfil -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:background="@color/md_white_1000">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/txt_info"
+                            android:id="@+id/txtinfo"
+                            android:textColor="@color/color_info"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/txt_info2"
+                            android:id="@+id/txtinfo2"
+                            android:textColor="@color/color_info"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/txt_info3"
+                            android:id="@+id/txtinfo3"
+                            android:textColor="@color/color_info"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp" />
+
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/divider0"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/crear_boton"
+                        android:layout_marginBottom="@dimen/padding_between"
+                        android:layout_marginTop="@dimen/padding_between"
+                        android:background="#C8C9CB" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/txt_med"
+                            android:id="@+id/status_med"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spn_Med"
+                            android:spinnerMode="dialog"
+                            android:visibility="visible"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="true"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_cmpLado_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/cmpLado_c"
+                            android:hint="@string/cmp_diametro"
+                            android:layout_weight="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_cmp_altura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:ems="10"
+                            android:id="@+id/cmpLado_h"
+                            android:hint="@string/cmp_altura"
+                            android:layout_weight="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_cmpElementos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:id="@+id/cmpElementos"
+                            android:text="1"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:hint="@string/cmp_elementos" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_cmpDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cmpDescripcion"
+                            android:hint="@string/cmp_descri"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/txt_resist"
+                            android:id="@+id/status_res"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spn_Res"
+                            android:spinnerMode="dialog"
+                            android:visibility="visible"
+                            android:focusable="true"
+                            android:focusableInTouchMode="false"
+                            android:clickable="true"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/txtvolumen"
+                            android:id="@+id/switchStatusNomal"
+                            android:textColor="@color/md_teal_700"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1" />
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mySwitchNomal"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_calcular"
+                        android:id="@+id/btnCalcular"
+                        android:layout_marginTop="15dp"
+                        android:onClick="onClick"
+                        android:background="@color/color_boton"
+
+                        android:textColor="@color/md_text_white" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Card Amigos -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin">
+
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white_1000">
+
+                    <!-- Etiqueta Amigos -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtmsjvolumen"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/txtView_Resultado"
+                        android:visibility="invisible"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:autoText="false"
+                        android:textColor="@color/md_text_white_87"
+                        android:background="@color/background_gris"
+                        android:textIsSelectable="true"
+                        android:typeface="sans"
+                        android:textStyle="bold" />
+
+                    <!-- Grafica -->
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="350dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guar_volumen"
+                        android:id="@+id/btnVolumen"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/md_brown_500"
+                        android:visibility="invisible"
+                        android:textColor="@color/md_text_white" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- App Bar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Collapser -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!-- Imagen del detalle -->
+            <ImageView
+                android:id="@+id/image_paralax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:transitionName="shared_image"/>
+
+            <!-- Toolbar -->
+            <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/CustomActionBar"
+
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- FAB -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/size_fab"
+        android:layout_height="@dimen/size_fab"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/ic_chat"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

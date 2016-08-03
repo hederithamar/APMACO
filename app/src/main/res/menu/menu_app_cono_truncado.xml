@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.herprogramacion.restaurantericoparico.ui.AppConoTruncado">
+    <item android:id="@+id/action_settings"
+        android:title="@string/msj_contenidominimo"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_result"
+        android:icon="@drawable/resultado_withe"
+        android:orderInCategory="1"
+        android:title="@string/btn_resu"
+        app:showAsAction="ifRoom" />
+</menu>

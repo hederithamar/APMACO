@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <!-- Objeto con Scroll -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp"
+            android:background="@color/color_light">
+
+
+            <TabHost
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tabHost2"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/md_red_A400"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:id="@+id/tab4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:background="@color/md_grey_50"><!-- Card Perfil -->
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/card_margin">
+
+                                <LinearLayout
+                                    style="@style/Widget.CardContent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/md_white_1000">
+                                    <!--Etiqueta Perfil -->
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_activity_resultados"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Small Text"
+                                        android:id="@+id/textView_Totales"
+                                        android:layout_row="1"
+                                        android:layout_column="0"
+                                        android:layout_columnSpan="2"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="15dp"
+                                        android:typeface="sans"
+                                        android:textIsSelectable="true"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:padding="5dp"
+                                        android:autoText="false"
+                                        android:background="@color/color_boton"
+                                        android:textColor="@color/md_text_white" />
+                                    <!--Texto de ejemplo-->
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+                            <!-- Card Perfil -->
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/card_margin">
+
+                                <LinearLayout
+                                    style="@style/Widget.CardContent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/md_white_1000">
+                                    <!--Etiqueta Perfil -->
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txtdatos"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                                    <ListView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="5000dp"
+                                        android:id="@+id/listView"
+                                        android:layout_gravity="center_horizontal"
+                                        android:background="@color/md_white_1000"
+                                        android:footerDividersEnabled="false"
+                                        android:headerDividersEnabled="false" />
+                                    <!--Texto de ejemplo-->
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tab5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:background="@color/md_grey_50">
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/card_margin"
+                                android:layout_marginLeft="@dimen/card_margin"
+                                android:layout_marginRight="@dimen/card_margin">
+
+                                <LinearLayout
+                                    style="@style/Widget.CardContent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/md_white_1000">
+
+                                    <!-- Etiqueta Intereses -->
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/title_activity_resultados"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:text="Small Text"
+                                        android:id="@+id/textView_Ingles"
+                                        android:layout_row="1"
+                                        android:layout_column="0"
+                                        android:layout_columnSpan="2"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="15dp"
+                                        android:padding="5dp"
+                                        android:textIsSelectable="true"
+                                        android:typeface="sans"
+                                        android:background="@color/color_boton"
+                                        android:textColor="@color/md_text_white" />
+
+                                    <!-- Texto de ejemplo -->
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/card_margin"
+                                android:layout_marginLeft="@dimen/card_margin"
+                                android:layout_marginRight="@dimen/card_margin">
+
+                                <LinearLayout
+                                    style="@style/Widget.CardContent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/md_white_1000">
+
+                                    <!-- Etiqueta Amigos -->
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Consultar Datos"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                                    <ListView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="5000dp"
+                                        android:id="@+id/listViewIngles"
+                                        android:background="@color/md_white_1000"/>
+
+                                    <!-- Texto de ejemplo -->
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+            <!-- Card Perfil -->
+
+            <!-- Card Amigos -->
+
+            <!-- Card Intereses -->
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!-- App Bar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Collapser -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!-- Imagen del detalle -->
+            <ImageView
+                android:id="@+id/image_paralax"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <!-- Toolbar -->
+            <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/CustomActionBar"
+
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- FAB -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/size_fab"
+        android:layout_height="@dimen/size_fab"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@mipmap/ic_chat"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

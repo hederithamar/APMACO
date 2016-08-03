@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_inicio"
+            android:icon="@drawable/inicio"
+            android:title="@string/item_inicio" />
+
+        <item android:title="@string/txt_software">
+            <menu>
+                <item
+                    android:id="@+id/item_categorias"
+                    android:icon="@drawable/school"
+                    android:title="@string/item_categorias" />
+                <item
+                    android:id="@+id/item_campo"
+                    android:icon="@drawable/categorias"
+                    android:title="@string/item_campo" />
+                <item
+                    android:id="@+id/item_resultado"
+                    android:icon="@drawable/resultado"
+                    android:title="@string/btn_resu" />
+            </menu>
+        </item>
+
+        <item android:title="@string/txt_more">
+            <menu>
+                <item
+                    android:id="@+id/item_cuenta"
+                    android:icon="@drawable/cuenta"
+                    android:title="@string/item_cuenta" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="@string/txt_datos">
+        <menu>
+            <item
+                android:id="@+id/item_configuracion"
+                android:icon="@drawable/configuracion"
+                android:title="@string/item_configuracion" />
+
+        </menu>
+    </item>
+</menu>

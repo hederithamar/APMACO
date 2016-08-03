@@ -1,0 +1,319 @@
+﻿<resources>
+    <string name="app_name">"APMACO"</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_add">Añadir</string>
+    <string name="action_carrito">Añadir al carrito</string>
+    <string name="action_favorite">Marcar Favorito</string>
+    <string name ="facebook_app_id">1760882964190327</string>
+
+    <string name="item_inicio">Inicio</string>
+    <string name="item_cuenta">Contáctanos</string>
+    <string name="item_categorias">Campo Educativo</string>
+    <string name="item_campo">Campo Laboral</string>
+    <string name="item_configuracion">Configuración</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="msj_educativo">Educativo</string>
+    <string name="msj_laboral">Laboral</string>
+
+    <string name="girl_ipsum">
+        Morbi posuere lorem nec elit dapibus, vitae accumsan mauris pellentesque.
+        Vestibulum a lobortis mi. Vestibulum lacinia molestie semper. Pellentesque
+        ultrices arcu lacus, interdum mollis nibh convallis ut. Aliquam sagittis
+        sem a lacus gravida, eu accumsan purus volutpat. Donec tempus, est id
+        tristique consectetur, lacus ligula dignissim turpis, cursus commodo turpis
+        libero in purus. Phasellus tempus gravida tempor.
+    </string>
+
+    <string name="titulo_comidas_populares">Aplicación para Materiales de Construcción</string>
+
+    <string name="titulo_tab_edificios">EDIFICIOS</string>
+    <string name="titulo_tab_puentes">PUENTES</string>
+    <string name="titulo_tab_carreteras">CARRETERAS</string>
+    <string name="titulo_tab_perfil">APMACO</string>
+    <string name="titulo_tab_direcciones">EQUIPO</string>
+    <string name="titulo_tab_tarjetas">OTROS</string>
+
+    <string name="texto_no_tarjetas">Prueba APMACO escritorio</string>
+    <string name="texto_cambiar_contrasena">Versión 3.0</string>
+
+    <string name="etiqueta_carrito">Carrito</string>
+    <string name="etiqueta_contrasena">Versión</string>
+    <string name="etiqueta_info_usuario">Información General</string>
+
+    <string name="app_titulo">Aplicación para Materiales de Construcción</string>
+    <string name="app_descripcion">
+        Es una aplicación que realiza los cálculos necesarios para la dosificación del concreto
+        en la construcción de cualquier obra civil, proporcionando la cantidad exacta de materiales
+        .</string>
+
+    <string name="app_titulo1">Elija el tipo de Construcción</string>
+    <string name="app_titulo2">Seleccione la Forma</string>
+
+    <string name="btn_inicio">Inicio</string>
+    <string name="btn_estru">Estructuras</string>
+    <string name="btn_empezar">Empezar</string>
+    <string name="btn_resu">Resultados</string>
+    <string name="btn_edif">Edificios</string>
+    <string name="btn_carr">Carreteras</string>
+    <string name="btn_puen">Puentes</string>
+    <string name="btn_parale">Paralelepípedo</string>
+    <string name="btn_cilind">Cilindro</string>
+    <string name="btn_pirami">Piramide</string>
+    <string name="btn_triang">Sección Triangular</string>
+    <string name="btn_semici">Sección Rectangular Semi-Circulo</string>
+    <string name="btn_trapec">Sección Trapecio</string>
+    <string name="btn_elipti">Sección Elíptica</string>
+    <string name="btn_rectru">Pirámide Truncada</string>
+    <string name="btn_tritru">Tetraedro Truncado</string>
+    <string name="btn_conotr">Cono Truncado</string>
+    <string name="btn_esfera">Esfera</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_eliminar">Eliminar</string>
+
+    <string name="txt_condesp">Con Desperdicio</string>
+    <string name="txt_sindesp">Sin Desperdicio</string>
+    <string name="txt_longit">Longitud:</string>
+    <string name="txt_largo">Largo:</string>
+    <string name="txt_ancho">Ancho:</string>
+    <string name="txt_altura">Altura:</string>
+    <string name="txt_altura1">altura:</string>
+    <string name="txt_diametro">Diámetro:</string>
+    <string name="txt_diametro1">diámetro:</string>
+    <string name="txt_elevacion">Elevación:</string>
+    <string name="txt_element">Elementos:</string>
+    <string name="txt_base">Base</string>
+    <string name="txt_base1">base</string>
+    <string name="txt_basemenor">Base Menor:</string>
+    <string name="txt_basemayor">Base Mayor:</string>
+    <string name="txt_radiomenor">Radio Menor:</string>
+    <string name="txt_radiomayor">Radio Mayor:</string>
+    <string name="txt_resist">Resistencia f´(c) en Kg/cm^2:</string>
+    <string name="txt_resist_ing">Resistencia f´(c) en Kl/ft^2:</string>
+    <string name="txt_med">Unidad de medida:</string>
+    <string name="txt_largomayor">Largo Mayor:</string>
+    <string name="txt_largomenor">Largo Menor:</string>
+    <string name="txt_anchomayor">Ancho Mayor:</string>
+    <string name="txt_anchomenor">Ancho Menor:</string>
+    <string name="txt_volumen">Volumen:</string>
+    <string name="txt_volumentotal">Volumen Total:</string>
+    <string name="txt_cemento">Cemento en Toneladas:</string>
+    <string name="txt_grava">Grava en m^3:</string>
+    <string name="txt_arena">Arena en m^3:</string>
+    <string name="txt_agua">Agua en m^3:</string>
+    <string name="txt_cementoing">Cemento en klb</string>
+    <string name="txt_gravaing">Grava en ft^3:</string>
+    <string name="txt_arenaing">Arena en ft^3:</string>
+    <string name="txt_aguaing">Agua en ft^3:</string>
+    <string name="txt_datos">Sistema:</string>
+    <string name="txt_software">Calcula tu Construcción:</string>
+    <string name="txt_unidades">Unidades:</string>
+    <string name="txt_descri">Descripción:</string>
+    <string name="txt_id">ID</string>
+    <string name="txt_resistencia">Resistencia</string>
+    <string name="txt_sistemainter">Sistema Internacional</string>
+    <string name="txt_normal">Volumen Normal</string>
+    <string name="txt_descuento">Volumen a  Descontar</string>
+    <string name="txt_sistemaingle">Sistema Ingles</string>
+    <string name="txt_cementoVolumen">VOLUMEN DE CONCRETO</string>
+    <string name="txt_cementoTolteca">CEMENTO TOLTECA</string>
+    <string name="txt_cementoApasco">CEMENTO APASCO</string>
+    <string name="txt_cementoMoctezuma">CEMENTO MOCTEZUMA</string>
+    <string name="txt_cementoAzul">CEMENTO AZUL</string>
+    <string name="txt_info">Cemento tipo (CPC 30R RS)</string>
+    <string name="txt_info2">Agregado máximo 19 mm</string>
+    <string name="txt_info3">Revenimiento 8-12cm</string>
+    <string name="txt_tipocem">Criterio de cálculo</string>
+    <string name="txt_more">Más Información:</string>
+    <string name="txt_cem">Tipo de Cemento:</string>
+    <string name="alerta4">Disculpe :( pero no hay resistencia de 300:</string>
+
+    <string name="cmp_elementos"> Ingrese la cantidad de los elementos a utilizar </string>
+    <string name="cmp_longitu"> Ingrese la Longitud (a) </string>
+    <string name="cmp_largo"> Ingrese el Largo (a) </string>
+    <string name="cmp_ancho"> Ingrese el Ancho (b) </string>
+    <string name="cmp_altura"> Ingrese la Altura (h) </string>
+    <string name="cmp_alturab"> Ingrese la Altura (b) </string>
+    <string name="cmp_alturab0"> Ingrese la altura (b) </string>
+    <string name="cmp_alturab1"> Ingrese la Altura (B) </string>
+    <string name="cmp_diametro"> Ingrese el Diámetro (A) </string>
+    <string name="cmp_diametro0"> Ingrese el Diámetro (a) </string>
+    <string name="cmp_diametrob"> Ingrese el Diámetro (b) </string>
+    <string name="cmp_descri">Agrega una Descripción (Ejemplo: Columnas, losa, ventana, puerta, etc.)</string>
+    <string name="cmp_base"> Ingrese la Base (a) </string>
+    <string name="cmp_base0"> Ingrese la base (a) </string>
+    <string name="cmp_base1"> Ingrese la Base (A) </string>
+    <string name="cmp_elevacion"> Ingrese la Elevación (h)</string>
+    <string name="cmp_basemenor"> Ingrese la Base Menor (b) </string>
+    <string name="cmp_basemayor">Ingrese la Base Mayor (B)</string>
+    <string name="cmp_radiomenor"> Ingrese la Radio Menor (b) </string>
+    <string name="cmp_radiomayor">Ingrese la Radio Mayor (a)</string>
+    <string name="cmp_largomayor">Ingrese el Largo Mayor (A)</string>
+    <string name="cmp_largomenor"> Ingrese el Largo Menor (a) </string>
+    <string name="cmp_anchomayor">Ingrese el Ancho Mayor (B)</string>
+    <string name="cmp_anchomenor"> Ingrese el Ancho Menor (b) </string>
+    <string name="cmp_eliminar">Ingrese ID a Eliminar</string>
+
+    <string name="alert0">Calculando. Listo!</string>
+    <string name="alert1">Se ha Guardado Correctamente</string>
+    <string name="alert2">Se ha Eliminado un Elemento</string>
+
+    <string name="guar_volumen"> Guardar Volumen </string>
+    <string name="guar_apasco"> Guardar Apasco </string>
+    <string name="guar_tolteca">Guardar Tolteca </string>
+    <string name="guar_moctezu"> Guardar Moctezuma </string>
+    <string name="guar_azul"> Guardar Cruz Azul </string>
+
+    <string name="title_activity_secondary">CONSTRUCCIÓN</string>
+    <string name="title_activity_edificios">MENU</string>
+    <string name="title_activity_resultados">RESULTADOS</string>
+    <string name="title_activity_app_triangular">Sección Triangular - Volumen</string>
+    <string name="title_activity_app_paralelepipedo">Paralelepípedo - Volumen</string>
+    <string name="title_activity_app_cilindro">Cilindro - Volumen</string>
+    <string name="title_activity_app_piramide">Piramide - Volumen</string>
+    <string name="title_activity_app_rect_semi_circulo">Rectangular Semi Circulo - Volumen</string>
+    <string name="title_activity_app_trapecio">Sección Trapecio - Volumen</string>
+    <string name="title_activity_app_eliptica">Sección Elíptica - Volumen</string>
+    <string name="title_activity_app_piramide_rect_truncada">Piramide Truncada - Volumen</string>
+    <string name="title_activity_app_piramide_trian_trunca">Tetraedro Truncado - Volumen</string>
+    <string name="title_activity_app_cono_truncado">Cono Truncado - Volumen</string>
+    <string name="title_activity_app_esfera">Esfera - Volumen</string>
+
+    <string name="descedificio">Realiza Cálculos para el Campo Educativo</string>
+    <string name="descpuente">Realiza Cálculos para el Campo Laboral</string>
+    <string name="desccarretera">Calcula las formas de una Carretera</string>
+    <string name="desc_cemento">Cemento</string>
+    <string name="desc_grava">Grava</string>
+    <string name="desc_arena">Arena</string>
+    <string name="desc_agua">Agua</string>
+    <string name="desc_aire">Aire</string>
+
+    <string name="txtvolumen">Volumen General</string>
+    <string name="txtvolumendesc">Volumen a Descontar</string>
+    <string name="txtmsjvolumen">Resultado por Volumen</string>
+    <string name="txtmsjcemento">Resultados por Tabla</string>
+    <string name="txtmsjcontenidomin">Resultado por Contenido Minimo</string>
+
+    <string name="txtmsjinternacional">Resultados en Sistema Internacional</string>
+    <string name="txtmsjingles">Resultados en Sistema Ingles</string>
+    <string name="txtgravaarena">Elija Porcentaje Grava Arena</string>
+    <string name="txt_wga">Ingrese W(G/A)</string>
+    <string name="txt_densidadg">Ingrese Densidad G</string>
+    <string name="txt_densidada">Ingrese Densidad A</string>
+    <string name="txt_densidadc">Ingrese Densidad C</string>
+    <string name="txt_maxaire">Elija Agregado Máximo</string>
+
+    <string name="msj_gravaarena">Porcentaje Grava Arena:</string>
+    <string name="msj_wga">W(G/A): </string>
+    <string name="msg_densidadg">Densidad G: </string>
+    <string name="msg_densidada">Densidad A: </string>
+    <string name="msg_densidadc">Densidad C: </string>
+    <string name="msg_maxaire">Max: </string>
+
+    <string name="txtdatos">Consultar Datos</string>
+    <string name="txteliminar">Eliminar Base de Datos</string>
+
+    <string name="delete_item">Eliminar Elemento</string>
+    <string name="action_eliminabase">Eliminar Base de Datos</string>
+
+    <string name="tab_volumen">Volumen</string>
+    <string name="tab_tabla">Tabla</string>
+    <string name="tab_diseno">Diseño</string>
+
+    <string name="msj_eliminabase">¿Desea Eliminar toda la Base de Datos?</string>
+    <string name="msj_calculacm">¿Desea calcular el método Contenido Mínimo?</string>
+    <string name="msj_contenidominimo">Método de Contenido Mínimo </string>
+    <string name="msj_tabla">Método por Tabla</string>
+    <string name="msj_mvolumen">Método por Volumen</string>
+    <string name="msj_metodotabla">Volumen y Tabla </string>
+    <string name="msj_metodocm">Contenido Mínimo </string>
+    <string name="msj_resultado">Resultados</string>
+    <string name="msj_extras">Extras </string>
+    <string name="msj_contenidominimo2">Resultados del Método de Contenido Mínimo </string>
+    <string name="msj_calculacmresul">¿Desea ver los resultados del Método Contenido Mínimo?</string>
+    <string name="msj_cancelar">Cancelar</string>
+    <string name="msj_eliminar">¿Eliminar? </string>
+    <string name="msj_eliminaritem">Desea eliminar:</string>
+    <string name="msj_ok">Aceptar</string>
+    <string name="msj_eliminarok">Se han ELIMINADO todos los Datos</string>
+    <string name="msj_version">v 2.01</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_save">Guardar</string>
+
+    <!-- Strings de diálogo personalizado -->
+    <string name="info_text">Necesitas tener creada una cuenta para iniciar la aplicación</string>
+    <string name="crear_boton">CREAR CUENTA</string>
+    <string name="nombre_input">Nombre</string>
+    <string name="contrasena_input">Constraseña</string>
+    <string name="recordar_check">Recordarme</string>
+    <string name="olvidar_text">¿Olvidaste tu Contraseña?</string>
+    <string name="entrar_boton">ENTRAR</string>
+    <string name="cliente_label">Cliente</string>
+    <string name="producto_label">Producto</string>
+    <string name="fecha_label">Fecha</string>
+    <string name="prioridad_label">Prioridad</string>
+    <string name="notas_label">Notas</string>
+    <string name="notas_hint">Notas</string>
+
+    <string-array name="clientes">
+        <item>Fernando Jimenez</item>
+        <item>Carlos Fuentes</item>
+        <item>Pedro Lopez</item>
+    </string-array>
+    <string-array name="productos">
+        <item>Seguro A</item>
+        <item>Seguro B</item>
+        <item>Seguro C</item>
+    </string-array>
+    <string-array name="prioridades">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+
+    <string name="string_aviso">¡Estas Calculando una forma: %1$s!</string>
+    <string name="title_activity_app_paralelepipedo_cm">Paralelepipedo Contenido Mínimo</string>
+    <string name="title_activity_app_cilindro_cm">Cilindro - Contenido Mínimo</string>
+    <string name="title_activity_app_piramide_cm">Pirámide - Contenido Mínimo</string>
+    <string name="title_activity_app_eliptica_cm">Eliptica - Contenido Mínimo</string>
+    <string name="title_activity_app_triangular_cm">Triangular - Contenido Mínimo</string>
+    <string name="title_activity_app_rect_semi_circulo_cm">Rectangular - Semi Circulo Contenido Mínimo</string>
+    <string name="title_activity_app_cono_truncado_cm">Cono Truncado - Contenido Mínimo</string>
+    <string name="title_activity_app_esfera_cm">Esfera  - Contenido Mínimo</string>
+    <string name="title_activity_app_trapecio_cm">Trapecio - Contenido Mínimo</string>
+    <string name="title_activity_app_piramide_rect_truncada_cm">Piramide Truncada - Contenido Mínimo</string>
+    <string name="title_activity_app_piramide_trian_trunca_cm">Tetraedro Truncado - Contenido Mínimo</string>
+    <string name="title_activity_resultado_cm">Resultados - Contenido Mínimo</string>
+    <string name="title_activity_app_volumen">Teniendo el Volumen</string>
+    <string name="msj_volumen">Ingrese el Volumen</string>
+    <string name="title_activity_app_volumen_cm">Teniendo el Volumen Contenido Mínimo</string>
+    <string name="title_activity_app_esfera_prop">Esfera - Tabla</string>
+    <string name="title_activity_app_cilindro_prop">Cilindro - Tabla</string>
+    <string name="title_activity_app_cono_truncado_tab">Cono Truncado - Tabla</string>
+    <string name="title_activity_app_eliptica_tab">Eliptica - Tabla</string>
+    <string name="title_activity_app_paralelepipedo_tab">Paralelepipedo - Tabla</string>
+    <string name="title_activity_app_piramide_tab">Piramide - Tabla</string>
+    <string name="title_activity_app_piramide_rect_truncada_tab">Piramide Truncada - Tabla</string>
+    <string name="title_activity_app_piramide_trian_trunca_tab">Tetraedro Truncado - Tabla</string>
+    <string name="title_activity_app_rect_semi_circulo_tab">Sección Rectangular Semi Circulo -
+        Tabla
+    </string>
+    <string name="title_activity_app_trapecio_tab">Sección Trapecio - Tabla</string>
+    <string name="title_activity_app_triangular_tab">Sección Triangular - Tabla</string>
+    <string name="title_activity_app_volumen_tab">Volumen - Tabla</string>
+    <string name="title_activity_app_lab_volumen">Teniendo el Volumen - Volumen</string>
+    <string name="title_activity_app_lab_paralelepipedo">Paralelepipedo - Volumen</string>
+    <string name="title_activity_app_lab_cilindro">Cilindro - Volumen</string>
+    <string name="title_activity_app_lab_triangular">Sección Triangular - Volumen</string>
+    <string name="title_activity_app_lab_trapecio">Sección Trapecio - Volumen</string>
+    <string name="title_activity_app_lab_eliptica">Sección Eliptica - Volumen</string>
+    <string name="title_activity_app_lab_cilindro_tab">Cilindro - Tabla</string>
+    <string name="title_activity_app_lab_eliptica_tab">Eliptica - Tabla</string>
+    <string name="title_activity_app_lab_paralelepipedo_tab">Paralelepipedo - Tabla</string>
+    <string name="title_activity_app_lab_trapecio_tab">Trapecio - Tabla</string>
+    <string name="title_activity_app_lab_triangular_tab">Triangular - Tabla</string>
+    <string name="title_activity_app_lab_volumen_tab">Volumen - Tabla</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>

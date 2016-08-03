@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="heder_ithamar.apmaco" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.RicoPaRico" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".ui.ActividadPrincipal"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.RicoPaRico" >
+        </activity>
+
+        <activity
+            android:name=".ui.ActividadConfiguracion"
+            android:label="@string/titulo_actividad_configuracion"
+            android:parentActivityName=".ui.ActividadPrincipal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppParalelepipedo"
+            android:label="@string/title_activity_app_paralelepipedo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppCilindro"
+            android:label="@string/title_activity_app_cilindro" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppPiramide"
+            android:label="@string/title_activity_app_piramide" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.Resultados"
+            android:label="@string/title_activity_resultados" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppEliptica"
+            android:label="@string/title_activity_app_eliptica" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppTriangular"
+            android:label="@string/title_activity_app_triangular" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppTrapecio"
+            android:label="@string/title_activity_app_trapecio" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppPiramideRectTruncada"
+            android:label="@string/title_activity_app_piramide_rect_truncada" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppRectSemiCirculo"
+            android:label="@string/title_activity_app_rect_semi_circulo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppConoTruncado"
+            android:label="@string/title_activity_app_cono_truncado" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppEsfera"
+            android:label="@string/title_activity_app_esfera" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.AppPiramideTrianTrunca"
+            android:label="@string/title_activity_app_piramide_trian_trunca" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".ui.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppParalelepipedoCM"
+            android:label="@string/title_activity_app_paralelepipedo_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppParalelepipedo" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppCilindroCM"
+            android:label="@string/title_activity_app_cilindro_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppCilindro" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppPiramideCM"
+            android:label="@string/title_activity_app_piramide_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppPiramide" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppElipticaCM"
+            android:label="@string/title_activity_app_eliptica_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppEliptica" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppTriangularCM"
+            android:label="@string/title_activity_app_triangular_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppTriangular" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppRectSemiCirculoCM"
+            android:label="@string/title_activity_app_rect_semi_circulo_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppRectSemiCirculo" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppConoTruncadoCM"
+            android:label="@string/title_activity_app_cono_truncado_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppConoTruncado" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppEsferaCM"
+            android:label="@string/title_activity_app_esfera_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppEsfera" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppTrapecioCM"
+            android:label="@string/title_activity_app_trapecio_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppTrapecio" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppPiramideRectTruncadaCM"
+            android:label="@string/title_activity_app_piramide_rect_truncada_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppPiramideRectTruncada" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.AppPiramideTrianTruncaCM"
+            android:label="@string/title_activity_app_piramide_trian_trunca_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.AppPiramideTrianTrunca" />
+        </activity>
+        <activity
+            android:name=".uiContenidoMinimo.ResultadoCM"
+            android:label="@string/title_activity_resultado_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.Resultados" />
+        </activity>
+        <activity
+            android:name=".uiVolumen.AppVolumen"
+            android:label="@string/title_activity_app_volumen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiVolumen.AppVolumenCM"
+            android:label="@string/title_activity_app_volumen_cm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppEsferaProp"
+            android:label="@string/title_activity_app_esfera_prop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppCilindroTab"
+            android:label="@string/title_activity_app_cilindro_prop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppConoTruncadoTab"
+            android:label="@string/title_activity_app_cono_truncado_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppElipticaTab"
+            android:label="@string/title_activity_app_eliptica_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppParalelepipedoTab"
+            android:label="@string/title_activity_app_paralelepipedo_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppPiramideTab"
+            android:label="@string/title_activity_app_piramide_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppPiramideRectTruncadaTab"
+            android:label="@string/title_activity_app_piramide_rect_truncada_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppPiramideTrianTruncaTab"
+            android:label="@string/title_activity_app_piramide_trian_trunca_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppRectSemiCirculoTab"
+            android:label="@string/title_activity_app_rect_semi_circulo_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppTrapecioTab"
+            android:label="@string/title_activity_app_trapecio_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiProporcion.AppTriangularTab"
+            android:label="@string/title_activity_app_triangular_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiVolumen.AppVolumenTab"
+            android:label="@string/title_activity_app_volumen_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabVolumen.AppLabVolumen"
+            android:label="@string/title_activity_app_lab_volumen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabVolumen.AppLabParalelepipedo"
+            android:label="@string/title_activity_app_lab_paralelepipedo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabVolumen.AppLabCilindro"
+            android:label="@string/title_activity_app_lab_cilindro" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabVolumen.AppLabTriangular"
+            android:label="@string/title_activity_app_lab_triangular" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabVolumen.AppLabTrapecio"
+            android:label="@string/title_activity_app_lab_trapecio" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabVolumen.AppLabEliptica"
+            android:label="@string/title_activity_app_lab_eliptica" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabTabla.AppLabCilindroTab"
+            android:label="@string/title_activity_app_lab_cilindro_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabTabla.AppLabElipticaTab"
+            android:label="@string/title_activity_app_lab_eliptica_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabTabla.AppLabParalelepipedoTab"
+            android:label="@string/title_activity_app_lab_paralelepipedo_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabTabla.AppLabTrapecioTab"
+            android:label="@string/title_activity_app_lab_trapecio_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabTabla.AppLabTriangularTab"
+            android:label="@string/title_activity_app_lab_triangular_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+        <activity
+            android:name=".uiLabTabla.AppLabVolumenTab"
+            android:label="@string/title_activity_app_lab_volumen_tab" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.ActividadPrincipal" />
+        </activity>
+
+    </application>
+
+</manifest>
